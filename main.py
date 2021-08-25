@@ -33,15 +33,6 @@ def handle_update_user(user):
     socketio.emit('update user', user)
 
 
-@app.route("/countries")
-def get_countries():
-    countries = Country.query.all()
-    res = {"country_map": []}
-    for e in countries:
-        res["country_map"].append(e.serialize())
-    return res
-
-
 @app.route("/groups/<group_id>")
 def get_all_group_messages(group_id):
     current_user_id = request.args.get('user_id')
