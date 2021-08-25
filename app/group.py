@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from Network_Project.server.db import db
+from .db import db
 
 
 class Group(db.Model):

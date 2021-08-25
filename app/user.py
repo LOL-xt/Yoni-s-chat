@@ -1,4 +1,4 @@
-from Network_Project.server.db import db
+from .db import db
 
 
 class User(db.Model):
