@@ -318,9 +318,10 @@ def write_message_to_db(sender_id, sender_name, date, content, group_id):
         return Response("Couldn't send message, choose another room", status=400, mimetype='application/json')
 
 
+app.run()
 db.create_all()
 socketio.run(app)
-#app.run(debug=True)
+
 
 
 
