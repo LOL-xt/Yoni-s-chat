@@ -3,12 +3,12 @@ from sqlalchemy import desc
 from flask import Response
 from flask import request
 from flask import json
-from app.server.message import Message
-from app.server.user import User
-from app.server.group import Group
-from app.server.user_group import User_Group
+from .message import Message
+from .user import User
+from .group import Group
+from .user_group import User_Group
 from typing import List
-from app.server.db import db, app
+from .db import db, app
 from flask_socketio import SocketIO
 
 
